@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    margin:0;
+    padding:0;
+    position: relative;
+    
+}
+
+// Styles for index page
+// canvas {
+//     position: absolute;
+//     top: 40%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+// }
+
+
+// Media queries
+// MQ for extra large screens responsive display
+@media only screen and (min-width: 1536px) {
+    
+}
+
+// MQ for large screens responsive display
+@media only screen and (min-width: 1024px) {
+    
+}
+
+// MQ for medium screens responsive display
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+// MQ for small screens responsive display
+@media only screen and (max-width: 768px) {
+    
+}
+

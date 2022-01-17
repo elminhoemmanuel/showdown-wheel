@@ -13,7 +13,7 @@
 
 ## Overview
 
-- The live demo of this project can be found deployed live on vercel [here](https://catly.vercel.app/) .  
+- The live demo of this project can be found deployed live on vercel [here](https://showdown-wheel.vercel.app/) .  
 
 
 - I built the two tests following the given instructions. Test 1 was done with pixi.js and Test 2 was done with Next.js ( React.js ) with compiling of SASS and serving of files as requested. Find guid on how to start the project below

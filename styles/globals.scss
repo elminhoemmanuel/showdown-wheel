@@ -10,22 +10,92 @@ html, body{
     margin:0;
     padding:0;
     position: relative;
-    
+    overflow-x: hidden !important;
 }
 
 // Styles for index page
-// canvas {
-//     position: absolute;
-//     top: 40%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-// }
+.container{
+    overflow-x: hidden !important;
+    .wheel-box{
+        h1, p{
+            font-size: 24px;
+            font-weight: bold;
+            padding: 3px 15px;
+            text-align: center;
+        }
+        .wheel, .wheel div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem 0;
+            .wheel-marker{
+                z-index: 50;
+            }
+            .wheel-img{
+                width: 40%;
+                margin-top: -60px;
+            }
+
+            .wheel-btn{
+                border-radius: 5px;
+                padding: 0.6rem 4rem;
+                background-image: linear-gradient(to bottom, #a4d620, #a4d620);
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+                border: none
+            }
+
+            .wheel-btn:hover{
+                background-image: linear-gradient(to bottom, #94b92f, #748b33);
+            }
+            .wheel-btn:focus{
+                outline: none
+            }
+            .rotate-center {
+                -webkit-animation: rotate-center 1s linear infinite both;
+                animation: rotate-center 1s linear infinite both;
+            }
+            @-webkit-keyframes rotate-center {
+                0% {
+                    -webkit-transform: rotate(0);
+                    transform: rotate(0);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes rotate-center {
+                0% {
+                    -webkit-transform: rotate(0);
+                    transform: rotate(0);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            
+        }
+    }
+}
+
+.mobile{
+    display: none;
+}
 
 
 // Media queries
 // MQ for extra large screens responsive display
-@media only screen and (min-width: 1536px) {
-    
+@media only screen and (min-width: 1366px) {
+    .container{
+        width: 1366px;
+        margin: 0 auto;
+        position: relative;
+    }
 }
 
 // MQ for large screens responsive display
@@ -39,7 +109,12 @@ html, body{
 }
 
 // MQ for small screens responsive display
-@media only screen and (max-width: 768px) {
-    
+@media only screen and (max-width: 600px) {
+   .large{
+       display: none;
+   }
+   .mobile{
+       display: block;
+   }
 }
 
